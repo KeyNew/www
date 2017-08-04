@@ -1,0 +1,233 @@
+* {
+  -webkit-box-sizing: border-box; }
+
+html, body, p, header, footer, section {
+  font-size: 100%;
+  padding: 0;
+  margin: 0; }
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #000;
+  -webkit-top-highlight-color: transparent; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("../font/iconfont.eot");
+  src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg"); }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 25px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.container header {
+  width: 100%;
+  height: 40px;
+  background-color: #FE5400;
+  margin: 0;
+  padding: 0; }
+
+.container footer {
+  width: 100%;
+  height: 50px;
+  background-color: #fff; }
+
+.container {
+  display: flex;
+  flex-flow: column nowrap; }
+  .container header {
+    top: 0;
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #F1BD45; }
+    .container header img {
+      width: 50px;
+      height: 25px;
+      margin-top: 8px;
+      margin-left: 3px; }
+    .container header input {
+      flex: 1;
+      height: 30px;
+      opacity: .4;
+      background-color: #000;
+      border-radius: 10px;
+      margin: 5px 10px 10px; }
+    .container header div {
+      display: block;
+      position: absolute;
+      top: 8px;
+      left: 40%;
+      color: #fff;
+      height: 25px; }
+      .container header div .ss {
+        font-size: 20px;
+        margin-right: 5px; }
+      .container header div span {
+        font-size: 14px;
+        line-height: 15px; }
+  .container section {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #ccc; }
+    .container section .lbt {
+      width: 100%;
+      height: 100px;
+      position: relative;
+      overflow: hidden; }
+      .container section .lbt #list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 800%;
+        height: 100px;
+        position: absolute; }
+        .container section .lbt #list li {
+          width: 12.5%;
+          float: left;
+          height: 100px; }
+          .container section .lbt #list li img {
+            width: 100%;
+            height: auto; }
+      .container section .lbt ol {
+        position: absolute;
+        bottom: -10px;
+        left: 35%;
+        z-index: 10;
+        list-style: none; }
+        .container section .lbt ol li {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #ccc;
+          float: left;
+          margin-left: 10px;
+          cursor: pointer;
+          opacity: .8; }
+        .container section .lbt ol li.current {
+          background-color: #FF5000; }
+    .container section .cd {
+      width: 100%;
+      background-color: #fff; }
+      .container section .cd div {
+        width: 20%;
+        height: 70px;
+        float: left;
+        text-align: center;
+        flex-flow: row wrap; }
+        .container section .cd div img {
+          width: 80%;
+          height: auto;
+          display: block;
+          margin-top: 10px;
+          margin-left: 5px; }
+        .container section .cd div span {
+          font-size: 14px;
+          color: black; }
+    .container section .td {
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+      position: relative;
+      background-color: #fff; }
+      .container section .td img {
+        width: 20%;
+        height: 70%;
+        margin-top: 10px;
+        margin-left: 10px; }
+      .container section .td .zx {
+        width: 15%;
+        height: 20px;
+        border: 1px solid red;
+        color: red;
+        font-size: 14px;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 8px;
+        position: absolute;
+        top: 15px;
+        left: 30%; }
+      .container section .td .wz {
+        font-size: 16px;
+        color: #ccc;
+        position: absolute;
+        bottom: -2px;
+        left: 46%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap; }
+    .container section .main {
+      margin-top: 5px;
+      width: 100%;
+      height: 200px; }
+      .container section .main .tqg {
+        width: 40%;
+        height: 100%;
+        float: left; }
+        .container section .main .tqg img {
+          width: 100%;
+          height: 100%; }
+      .container section .main .a {
+        width: 60%;
+        height: 100%;
+        float: right; }
+        .container section .main .a .yhh {
+          width: 100%;
+          height: 50%; }
+          .container section .main .a .yhh img {
+            width: 50%;
+            height: 100%;
+            float: left; }
+        .container section .main .a .ab {
+          width: 100%;
+          height: 50%; }
+          .container section .main .a .ab img {
+            width: 50%;
+            height: 100%;
+            float: left; }
+          .container section .main .a .ab img:nth-child(1) {
+            border-right: 1px solid #ccc; }
+  .container footer {
+    bottom: 0;
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-flow: column wrap; }
+    .container footer div {
+      font-size: 14px;
+      color: #7F7F7F;
+      height: 50px;
+      flex: 1;
+      text-align: center; }
+      .container footer div div {
+        font-size: 25px;
+        width: 100%;
+        height: 20px;
+        margin-top: 5px; }
+      .container footer div span {
+        flex: 1;
+        height: 20px;
+        display: inline-block;
+        margin-top: 4px; }
+
+/*# sourceMappingURL=tb.css.map */

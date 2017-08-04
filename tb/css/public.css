@@ -1,0 +1,17 @@
+* {
+  -webkit-box-sizing: border-box; }
+
+body, p, header, footer, section {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #000;
+  -webkit-top-highlight-color: transparent; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+/*# sourceMappingURL=public.css.map */
